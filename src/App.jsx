@@ -1,10 +1,13 @@
 import Header from './Container/header'
 import Footer from './Container/footer'
+import Main from './Main/index'
+// import Main from './Main'
+
 function App() {
     return (
         <section>
             <Header />
-            <h1 className='text-red-500'>Asian Hope IT Company</h1>
+            <Main />
             <Footer />
         </section>
     )

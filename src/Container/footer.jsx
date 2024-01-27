@@ -12,14 +12,17 @@ const aboutItems = {
 function Footer() {
     return (
         <footer className='bg-[#001f54] py-10'>
-            <div className='max-w-screen-xl mx-auto px-5'>
+            <div className='max-w-screen-xl mx-auto px-5 xl:px-0'>
                 <div className='grid md:grid-cols-3 grid-cols-1 gap-6 md:gap-10 mb-5'>
-                    <div className='flex md:block'>
-                        <div className='w-16 h-16 rounded-full'>
-                            <img src={logo} alt="header-logo" className='w-full h-full rounded-full' />
+                    <div>
+                        <div className='flex items-start'>
+                            <div className='w-14 h-14 rounded-full'>
+                                <img src={logo} alt="header-logo" className='w-full h-full rounded-full' />
+                            </div>
+                            <h4 className='text-white font-semibold ml-3'>AsianHope IT <br /> Company</h4>
                         </div>
-                        <div className='sm:mt-5 text-white ml-5 sm:ml-0'>
-                            <h4>9986847868</h4>
+                        <div className='sm:mt-5 text-white mt-3'>
+                            <h4>9448627779</h4>
                             <h4>asianhopeit@gmail.com</h4>
                         </div>
                     </div>
@@ -42,10 +45,10 @@ function Footer() {
                     <div>
                         <h3 className='text-white text-lg'>Contact</h3>
                         <h3 className='text-white'>
-                            <b>Phone</b> : 9986847868
+                            <b>Phone</b> : 9448627779
                         </h3>
                         <h3 className='text-white'>
-                            <b>Email</b> : asianhopeit@gmail.co
+                            <b>Email</b> : connect@asianhopeit.com
                         </h3>
                     </div>
                 </div>
