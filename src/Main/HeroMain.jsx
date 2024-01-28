@@ -10,7 +10,7 @@ function HeroMain() {
                         Perfect Place for Your <br /> Business <br />Promotion
                     </h1>
                     <div className='flex items-center mt-10'>
-                        <button className='border-2 border-blue-500 bg-white text-blue-500 py-2.5 px-5 font-semibold rounded-full hover:bg-white hover:text-blue-500'>Contact Us</button>
+                        <button className='border-2 bg-blue-500 text-white py-2.5 px-5 font-semibold rounded-full hover:bg-white hover:border-blue-500 hover:text-blue-500'>Contact Us</button>
                     </div>
                 </div>
                 <div className='md:w-1/2 mt-5 md:mt-0'>
