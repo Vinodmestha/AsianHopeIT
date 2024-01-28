@@ -1,20 +1,25 @@
 import React from 'react'
 import bpo from "../assets/service/bpo.jpg"
+import software from "../assets/service/software-design.jpg"
+import eGovernance from "../assets/service/e-governance.jpg"
+import dataManage from "../assets/service/data-management.jpg"
+import trainingResource from "../assets/service/resource-training.jpg"
+import business from "../assets/service/business-consulting.jpg"
 const ourService = [
     { icon: bpo, label: "BPO Services", desc: "For Outstanding Business Inbound and outbound process." },
-    { icon: bpo, label: "Software Development And Design", desc: "Tailored software development to provide varied specialized IT and ITeS services the e- governance and IT modernization programs in India." },
-    { icon: bpo, label: "E-Governance", desc: "To provide software services in the  following areas end-to-end solutions." },
-    { icon: bpo, label: "Data Management and Services", desc: "For secure, reliable and hassle-free data management service." },
-    { icon: bpo, label: "Business Consulting Services", desc: "From Inception to Execution including all level tasks across diverse departments." },
-    { icon: bpo, label: "Resource Argumentation & Training Resources", desc: "Sourcing and Training of the workforce in Corporate environment" }
+    { icon: software, label: "Software Development And Design", desc: "Tailored software development to provide varied specialized IT and ITeS services the e- governance and IT modernization programs in India." },
+    { icon: eGovernance, label: "E-Governance", desc: "To provide software services in the  following areas end-to-end solutions." },
+    { icon: dataManage, label: "Data Management and Services", desc: "For secure, reliable and hassle-free data management service." },
+    { icon: business, label: "Business Consulting Services", desc: "From Inception to Execution including all level tasks across diverse departments." },
+    { icon: trainingResource, label: "Resource Argumentation & Training Resources", desc: "Sourcing and Training of the workforce in Corporate environment" }
 ]
 function Service() {
     return (
         <main className='bg-gray-100'>
             <section className='max-w-screen-xl mx-auto py-8 md:py-14 px-3 xl:px-0'>
-                <div className='text-center'>
+                <div className='text-center mb-12'>
                     <h1 className='text-4xl tracking-wide font-bold mb-5'>All the services that we provide</h1>
-                    <p className='text-[17px] font- text-gray-500 px-14'>We can meet you anywhere in your journey with a
+                    <p className='text-[17px] font- text-gray-500 px-3 sm:px-14'>We can meet you anywhere in your journey with a
                         unique plan that changes and grows with you,
                         from full implementation to strategic advisory and
                         program management.
@@ -45,15 +50,15 @@ function Service() {
                                 key={i}
                                 className="p-4 flex flex-col items-center text-center transition-all rounded-xl hover:scale-105 bg-[#F2F1FD]"
                             >
-                                <div className='w-20 h-20 mb-4'>
+                                <div className='w-full h-48 mb-4'>
                                     <img
                                         src={item?.icon}
                                         alt={item?.label}
-                                        className="w-full h-full rounded-full"
+                                        className="w-full h-full rounded-lg"
                                     />
                                 </div>
-                                <h4 className="mb-2 text-lg font-semibold">{item?.label}</h4>
-                                <p className="text-gray-500">{item?.desc}</p>
+                                <h4 className="mb-2 text-xl font-bold">{item?.label}</h4>
+                                <p className="text-gray-500 font-[500]">{item?.desc}</p>
                             </div>
                         ))}
                     </div>
