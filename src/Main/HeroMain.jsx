@@ -1,6 +1,6 @@
 import React from 'react'
 import heroImg from "../assets/business-meeting-office.jpg"
-function Hero() {
+function HeroMain() {
     return (
         <main className='relative'>
             <div className='absolute right-0 top-0 h-full w-[700px] bg-[#dee2ff] -z-10 rounded-bl-full'></div>
@@ -23,4 +23,4 @@ function Hero() {
     )
 }
 
-export default Hero
+export default HeroMain
