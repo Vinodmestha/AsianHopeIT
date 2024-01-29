@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        axiforma: "axiformaRegular",
+        axiMedium: "axiformaMedium",
+        axiSemiBold: "axiformaSemiBold",
+        axiBold: "axiformaBold",
+    },
+    },
   },
   plugins: [],
 }

@@ -5,6 +5,7 @@ import eGovernance from "../assets/service/e-governance.jpg"
 import dataManage from "../assets/service/data-management.jpg"
 import trainingResource from "../assets/service/resource-training.jpg"
 import business from "../assets/service/business-consulting.jpg"
+import { H1 } from '../Components/Typography'
 const ourService = [
     { icon: bpo, label: "BPO Services", desc: "For Outstanding Business Inbound and outbound process." },
     { icon: software, label: "Software Development And Design", desc: "Tailored software development to provide varied specialized IT and ITeS services the e- governance and IT modernization programs in India." },
@@ -18,8 +19,8 @@ function Service() {
         <main className='bg-gray-100'>
             <section className='max-w-screen-xl mx-auto py-8 md:py-14 px-3 xl:px-0'>
                 <div className='text-center mb-12'>
-                    <h1 className='text-4xl tracking-wide font-bold mb-5'>All the services that we provide</h1>
-                    <p className='text-[17px] font- text-gray-500 px-3 sm:px-14'>We can meet you anywhere in your journey with a
+                    <H1>All the services that we provide</H1>
+                    <p className='mt-10 text-[17px] font-axiforma text-gray-500 px-3 sm:px-14'>We can meet you anywhere in your journey with a
                         unique plan that changes and grows with you,
                         from full implementation to strategic advisory and
                         program management.
@@ -32,7 +33,7 @@ function Service() {
 
                 </div>
                 <div className='sm:bg-white sm:p-5 lg:p-10 rounded-xl mt-10'>
-                    <p className='text-teal-800 font-semibold text-lg mt-4 mb-10 text-center'>
+                    <p className='text-teal-800  font-axiforma mt-4 mb-10 text-center'>
                         Our focused offerings to support
                         you through each stage of your
                         journey - from pilot to
@@ -50,15 +51,15 @@ function Service() {
                                 key={i}
                                 className="p-4 flex flex-col items-center text-center transition-all rounded-xl hover:scale-105 bg-[#F2F1FD]"
                             >
-                                <div className='sm:w-full h-24 sm:h-32 md:h-40 lg:h-48 mb-4'>
+                                <div className='sm:w-full h-24 sm:h-32 md:h-40 lg:h-48 mb-5'>
                                     <img
                                         src={item?.icon}
                                         alt={item?.label}
                                         className="w-full h-full rounded-lg"
                                     />
                                 </div>
-                                <h4 className="mb-2 text-xl font-bold">{item?.label}</h4>
-                                <p className="text-gray-500 font-[500]">{item?.desc}</p>
+                                <h4 className="mb-3 text-lg font-axiforma font-bold">{item?.label}</h4>
+                                <p className="text-gray-500 font-axiforma">{item?.desc}</p>
                             </div>
                         ))}
                     </div>
