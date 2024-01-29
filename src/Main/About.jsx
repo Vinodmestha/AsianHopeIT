@@ -17,7 +17,7 @@ function About() {
                 <div className="grid grid-cols-1 gap-5 lg:gap-12 pt-10">
                     {about?.map((item, i) => (
                         <div key={i} className='md:flex gap-10' dir={i % 2 ? "ltr" : "rtl"}>
-                            <div className=' md:w-1/2 h-[250px] sm:h-[300px] lg:h-[350px]' >
+                            <div className=' md:w-1/2 h-[200px] sm:h-[250px] lg:h-[350px]' >
                                 <img src={item?.image} alt="about" className='w-full h-full rounded-xl' />
                             </div>
                             <div className='md:w-1/2 flex items-center mt-5 md:mt-0'>

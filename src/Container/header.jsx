@@ -13,7 +13,7 @@ function Header() {
     const [open, setOpen] = useState(false);
     return (
         <div className='sticky bg-[#] border-b z-[1]'>
-            <div className='max-w-screen-xl mx-auto flex justify-between items-center py-5 px-3 xl:px-0'>
+            <div className='max-w-screen-xl mx-auto flex justify-between items-center py-4 px-3 xl:px-0'>
                 <div className='flex justify-center items-center font'>
                     <div className='w-14 h-14 rounded-full'>
                         <img src={logo} alt="header-logo" className='w-full h-full rounded-full' />
@@ -32,8 +32,7 @@ function Header() {
                     </button>
                     <div
                         id="navbarCollapse"
-                        className={`absolute right-0 top-full w-full rounded-b-lg z-50 bg-white shadow md:static md::flex md:w-full md:max-w-full md:shadow-none px-5 md:px-0 
-                        ${!open && "hidden"} `}
+                        className={`absolute right-0 top-full w-full rounded-b-lg z-50 bg-white shadow md:static md::flex md:w-full md:max-w-full md:shadow-none px-5 md:px-0 ${open ? "hidden" : ""} `}
                     >
                         <ul className='items-center gap-8 lg:gap-12 block md:flex md:py-0 py-1'>
                             {navItems?.map((item, i) => (

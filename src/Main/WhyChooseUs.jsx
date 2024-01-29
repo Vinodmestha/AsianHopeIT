@@ -17,7 +17,7 @@ function WhyChooseUs() {
                     {whyChooseUs?.map((item, i) => (
                         <li className="rounded-xl bg-white px-6 py-8 shadow-sm">
                             <img src="https://www.svgrepo.com/show/530438/ddos-protection.svg" alt={item?.label} className="mx-auto h-10 w-10" />
-                            <h3 className="my-3 font-axiBold text-lg font-medium">Powered by ChatGPT</h3>
+                            <h3 className="my-3 font-axiBold text-lg font-medium">{item?.label}</h3>
                             <p className="mt-1.5 text-base leading-6 font-axiforma">
                                 {item?.desc}
                             </p>
