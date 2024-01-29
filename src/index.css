@@ -28,13 +28,13 @@ a{
 }
 @font-face {
     font-family: axiformaMedium;
-    src: url("../src/assets/fonts/Axiforma/Axiforma-Medium.ttf") format("opentype");
+    src: url("../src/assets/Fonts/Axiforma/Axiforma-Medium.ttf") format("opentype");
 }
 @font-face {
     font-family: axiformaSemiBold;
-    src: url("../src/assets/fonts/Axiforma/Axiforma-SemiBold.ttf") format("opentype");
+    src: url("../src/assets/Fonts/Axiforma/Axiforma-SemiBold.ttf") format("opentype");
 }
 @font-face {
     font-family: axiformaBold;
-    src: url("../src/assets/fonts/Axiforma/Axiforma-Bold.ttf") format("opentype");
+    src: url("../src/assets/Fonts/Axiforma/Axiforma-Bold.ttf") format("opentype");
 }
