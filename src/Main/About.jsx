@@ -20,7 +20,7 @@ function About() {
                                 <img src={item?.image} alt="about" className='w-full h-full rounded-xl' />
                             </div>
                             <div className='md:w-1/2 flex items-center mt-5 md:mt-0'>
-                                <p className='text-left font-medium text-lg text-gray-600 leading-9'>{item?.desc}</p>
+                                <p className='text-left font-medium text-base sm:text-lg text-gray-600 leading-7 sm:leading-8 md:leading-9'>{item?.desc}</p>
                             </div>
                         </div>
                     ))}

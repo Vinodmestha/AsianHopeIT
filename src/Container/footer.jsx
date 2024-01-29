@@ -38,7 +38,7 @@ function Footer() {
                         <div>
                             <h3 className='text-white text-lg'>Address</h3>
                             <ul className='mt-2'>
-                                <li className='text-white mb-2'>Bengalore</li>
+                                <li className='text-white mb-2'>Basaveshwaranagara, Bengaluru</li>
                             </ul>
                         </div>
                     </div>

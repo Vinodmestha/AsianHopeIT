@@ -2,10 +2,11 @@ import React from 'react'
 import logo from "../assets/asian_hope_it_company_logo.jpeg"
 
 const navItems = [
-    { label: "HOME", slug: "HOME" },
+    { label: "About", slug: "about" },
     { label: "Services", slug: "services" },
     { label: "Our Team", slug: "our-team" },
-    { label: "Blog", slug: "blog" }
+    { label: "Other Services", slug: "other-services" },
+    // { label: "Why Choose Us", slug: "why-choose" }
 ]
 function Header() {
     return (
@@ -18,7 +19,7 @@ function Header() {
                     <h4 className='text-[#001f54] font-semibold ml-3'>AsianHope IT <br /> Company</h4>
                 </div>
                 <nav className='hidden md:block'>
-                    <ul className='flex items-center gap-10 lg:gap-20'>
+                    <ul className='flex items-center gap-10 lg:gap-16'>
                         {navItems?.map((item, i) => (
                             <li key={i} className='text-lg text-[#001f54] font-semibold hover:text-gray-400 cursor-pointer'>{item?.label}</li>
                         ))}

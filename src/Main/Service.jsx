@@ -31,7 +31,7 @@ function Service() {
                     </p>
 
                 </div>
-                <div className='bg-white p-5 lg:p-10 rounded-xl mt-10'>
+                <div className='sm:bg-white sm:p-5 lg:p-10 rounded-xl mt-10'>
                     <p className='text-teal-800 font-semibold text-lg mt-4 mb-10 text-center'>
                         Our focused offerings to support
                         you through each stage of your
@@ -50,7 +50,7 @@ function Service() {
                                 key={i}
                                 className="p-4 flex flex-col items-center text-center transition-all rounded-xl hover:scale-105 bg-[#F2F1FD]"
                             >
-                                <div className='w-full h-48 mb-4'>
+                                <div className='sm:w-full h-24 sm:h-32 md:h-40 lg:h-48 mb-4'>
                                     <img
                                         src={item?.icon}
                                         alt={item?.label}
