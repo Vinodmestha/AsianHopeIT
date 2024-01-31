@@ -14,14 +14,14 @@ function About() {
         <main className='bg-white'>
             <section className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
                 <H1>About Us</H1>
-                <div className="grid grid-cols-1 gap-5 lg:gap-12 pt-10">
+                <div className="grid grid-cols-1 gap-5 lg:gap-24 pt-14">
                     {about?.map((item, i) => (
                         <div key={i} className='md:flex gap-10' dir={i % 2 ? "ltr" : "rtl"}>
                             <div className=' md:w-1/2 h-[200px] sm:h-[250px] lg:h-[350px]' >
                                 <img src={item?.image} alt="about" className='w-full h-full rounded-xl' />
                             </div>
                             <div className='md:w-1/2 flex items-center mt-5 md:mt-0'>
-                                <p className='text-left font-medium text-base font-axiforma sm:text-lg text-gray-600 leading-7 sm:leading-8 md:leading-9'>{item?.desc}</p>
+                                <p className='text-left font-axiforma text-gray-600 leading-7 sm:leading-8 md:leading-9'>{item?.desc}</p>
                             </div>
                         </div>
                     ))}

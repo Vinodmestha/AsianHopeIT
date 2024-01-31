@@ -5,6 +5,7 @@ import Contract from './Contract'
 import HeroMain from './HeroMain'
 import OtherServices from './OtherServices'
 import WhyChooseUs from './WhyChooseUs'
+import Team from './Team'
 
 function Main() {
     return (
@@ -15,6 +16,7 @@ function Main() {
             <Service />
             <OtherServices />
             <WhyChooseUs />
+            <Team />
         </>
     )
 }

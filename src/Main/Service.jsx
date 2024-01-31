@@ -32,7 +32,7 @@ function Service() {
                     </p>
 
                 </div>
-                <div className='sm:p-5 lg:p-10 mt-10 border-2 border-red-300 rounded-xl'>
+                <div className='sm:p-5 lg:p-10 mt-10 sm:border-2 border-red-300 rounded-xl'>
                     <p className='text-teal-800  font-axiforma mt-4 mb-10 text-center'>
                         Our focused offerings to support
                         you through each stage of your

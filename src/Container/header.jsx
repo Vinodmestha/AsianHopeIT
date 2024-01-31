@@ -28,9 +28,6 @@ function Header() {
                         className={` ${open && "navbarTogglerActive"} absolute size-10 right-4 top-1/2 block -translate-y-1/2 px-1 py-2 md:hidden`}
                     >
                         <img src={menu} alt='menu-con' className='w-full h-full' />
-                        {/* <span className="relative my-[4px] block h-[2px] w-[24px] bg-black"></span>
-                        <span className="relative my-[4px] block h-[2px] w-[24px] bg-black"></span>
-                        <span className="relative my-[4px] block h-[2px] w-[24px] bg-black"></span> */}
                     </button>
                     <div
                         id="navbarCollapse"
