@@ -29,9 +29,9 @@ function OtherServices() {
                         {otherServices?.map((item, i) => (
                             <div
                                 key={i}
-                                className="p-4 flex flex-col items-center text-center rounded-xl  bg-white"
+                                className="p-4 grid flex-col items-center text-center rounded-xl  bg-white"
                             >
-                                <div className='w-32 h-32 mb-5'>
+                                <div className='w-32 h-32 mb-5 mx-auto'>
                                     <img
                                         src={item?.icon}
                                         alt={item?.label}
@@ -39,8 +39,8 @@ function OtherServices() {
                                     />
                                 </div>
                                 <h4 className="mb-3 text-xl font-bold font-axiBold text-[#03045e]">{item?.label}</h4>
-                                <p className="text-gray-500 font-axiforma font-[500]">{item?.desc}</p>
-                                <div className='flex items-center '>
+                                <p className="text-gray-500 font-axiMedium">{item?.desc}</p>
+                                <div className='flex items-center mt-4'>
                                     <h3 className='text-5xl my-3 font-bold font-axiBold text-[#03045e]'>{item?.value}</h3>
                                     <p className='pl-5 text-left font-axiforma text-gray-400'>{item?.desc2}</p>
                                 </div>

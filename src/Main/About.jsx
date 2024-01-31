@@ -11,7 +11,7 @@ const about = [
 ]
 function About() {
     return (
-        <main className='bg-gray-50'>
+        <main className='bg-white'>
             <section className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
                 <H1>About Us</H1>
                 <div className="grid grid-cols-1 gap-5 lg:gap-12 pt-10">

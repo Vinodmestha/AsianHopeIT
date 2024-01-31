@@ -16,7 +16,7 @@ const ourService = [
 ]
 function Service() {
     return (
-        <main className='bg-gray-100'>
+        <main className=''>
             <section className='max-w-screen-xl mx-auto py-8 md:py-14 px-3 xl:px-0'>
                 <div className='text-center mb-12'>
                     <H1>All the services that we provide</H1>
@@ -32,7 +32,7 @@ function Service() {
                     </p>
 
                 </div>
-                <div className='sm:bg-white sm:p-5 lg:p-10 rounded-xl mt-10'>
+                <div className='sm:p-5 lg:p-10 mt-10 border-2 border-red-300 rounded-xl'>
                     <p className='text-teal-800  font-axiforma mt-4 mb-10 text-center'>
                         Our focused offerings to support
                         you through each stage of your
@@ -49,7 +49,7 @@ function Service() {
                         {ourService?.map((item, i) => (
                             <div
                                 key={i}
-                                className="p-4 flex flex-col items-center text-center transition-all rounded-xl hover:scale-105 bg-[#F2F1FD]"
+                                className="p-4 flex flex-col items-center text-center transition-all shadow-xl rounded-xl hover:scale-105 md:bg-[#F2F1FD]"
                             >
                                 <div className='sm:w-full h-24 sm:h-32 md:h-40 lg:h-48 mb-5'>
                                     <img
