@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
-import logo from "../assets/asian_hope_it_company_logo.jpeg"
+// import logo from "../assets/asian_hope_it_company_logo.jpeg"
+import logo from "../assets/logo.jpg"
 import menu from "../assets/Icons/menu.svg"
 import { PrimaryBtn } from '../Components/Button'
 
 const navItems = [
     { label: "About", slug: "about" },
     { label: "Services", slug: "services" },
-    { label: "Our Team", slug: "our-team" },
     { label: "Other Services", slug: "other-services" },
+    { label: "Our Team", slug: "our-team" },
     // { label: "Why Choose Us", slug: "why-choose" }
 ]
 function Header() {
@@ -19,7 +20,7 @@ function Header() {
                     <div className='w-14 h-14 rounded-full'>
                         <img src={logo} alt="header-logo" className='w-full h-full rounded-full' />
                     </div>
-                    <h4 className='text-[#001f54] text-sm font-axiforma tracking-wider font-bold ml-2 mt-2'>AsianHope IT <br /> Company</h4>
+                    <h4 className='text-[#001f54] text-sm font-axiSemiBold tracking-wider ml-2'>AsianHope IT <br /> Company</h4>
                 </div>
                 <nav className='block z-10'>
                     <button
@@ -37,11 +38,11 @@ function Header() {
                             {navItems?.map((item, i) => (
                                 <li key={i} className='font-axiMedium text-base lg:text-lg text-[#001f54]  hover:text-gray-400 cursor-pointer py-2 md:py-0'>{item?.label}</li>
                             ))}
-                            <div>
+                            {/* <div>
                                 <PrimaryBtn>
                                     Contact Us
                                 </PrimaryBtn>
-                            </div>
+                            </div> */}
                         </ul>
 
                     </div>

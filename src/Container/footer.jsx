@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/asian_hope_it_company_logo.jpeg"
+import logo from "../assets/logo.jpg"
 import fb from "../assets/SocialMedia/facebook.png"
 import ig from "../assets/SocialMedia/instagram.png"
 import x from "../assets/SocialMedia/x.png"
@@ -10,7 +10,7 @@ const aboutItems = {
         { label: "Company", slug: "company" },
         { label: "Services", slug: "services" },
         { label: "Our Team", slug: "our-team" },
-        { label: "Blog", slug: "blog" }
+        // { label: "Blog", slug: "blog" }
     ]
 }
 const socialMedia = [
@@ -69,7 +69,7 @@ function Footer() {
                     </h4>
                     <ul className='flex gap-3 text-white font-semibold mt-3 sm:mt-0'>
                         {socialMedia?.map((item, i) => (
-                            <li>
+                            <li key={i}>
                                 <a href={item?.link}>
                                     <img src={item?.icon} alt={item?.slug} className='size-8' />
                                 </a>
