@@ -16,14 +16,14 @@ function HeroMain() {
             {/* </div> */}
             <section className='max-w-screen-xl mx-auto md:flex py-14 md:py-28 px-3 xl:px-0 lg:h-[85vh]'>
                 <div className='relative lg:w-1/2 w-3/4 mt-5 grid'>
-                    <img src={lines} alt="lines-icon" className='absolute -right-80 -bottom-28 size-60 -z-10' />
+                    <img src={lines} alt="lines-icon" className='absolute lg:flex hidden -right-80 -bottom-28 size-60 -z-10' />
                     <div>
                         <h1 className='text-6xl md:text-6xl font-axiforma md:leading-[80px] leading-[70px] font-bold text-[#03045e]   '>
                             Perfect Place for Your <br /> <span className='text-[#ffc300]'>Business</span> <br />Promotion
                         </h1>
                     </div>
 
-                    <div>
+                    <div className='mt-5 lg:mt-0'>
                         <SecondaryBtn>
                             <a href="tel: +91 9448627779">Contact Us</a>
                         </SecondaryBtn>

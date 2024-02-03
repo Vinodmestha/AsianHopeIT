@@ -16,8 +16,8 @@ const ourService = [
 ]
 function Service() {
     return (
-        <main className=''>
-            <section className='max-w-screen-xl mx-auto py-8 md:py-14 px-3 xl:px-0'>
+        <main className='bg-gray-50'>
+            <section className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
                 <div className='text-center mb-12'>
                     <H1>All the services that we provide</H1>
                     <p className='mt-10 text-[17px] font-axiforma text-gray-500 px-3 sm:px-14'>We can meet you anywhere in your journey with a
@@ -32,8 +32,9 @@ function Service() {
                     </p>
 
                 </div>
-                <div className='sm:p-5 lg:p-10 mt-10 sm:border-2 border-red-300 rounded-xl'>
-                    <p className='text-teal-800  font-axiforma mt-4 mb-10 text-center'>
+                {/* <hr className='border-[#ffc300]' /> */}
+                <div className='pt-5'>
+                    <p className='text-teal-800 font-axiforma mt-4 mb-10 text-center bg-white p-8 rounded-xl shadow-lg'>
                         Our focused offerings to support
                         you through each stage of your
                         journey - from pilot to

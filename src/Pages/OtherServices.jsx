@@ -11,7 +11,7 @@ const otherServices = [
 function OtherServices() {
     return (
         <main className='bg-gray-100'>
-            <section className='max-w-screen-xl mx-auto py-8 md:py-14 px-3 xl:px-0'>
+            <section className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
                 <div className='text-center mb-12'>
                     <H1>Other Services</H1>
                     <p className='font-axiforma text-gray-700 px-3 sm:px-14 mt-10'>

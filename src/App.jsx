@@ -1,13 +1,13 @@
 import Header from './Container/header'
 import Footer from './Container/footer'
-import Main from './Main/index'
+import Pages from './Pages/index'
 // import Main from './Main'
 
 function App() {
     return (
         <section>
             <Header />
-            <Main />
+            <Pages />
             <Footer />
         </section>
     )
