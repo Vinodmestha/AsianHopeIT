@@ -1,15 +1,18 @@
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+
 import Header from './Container/header'
+import PageRoute from './routes'
 import Footer from './Container/footer'
-import Pages from './Pages/index'
 // import Main from './Main'
 
 function App() {
     return (
-        <section>
+        <Router>
             <Header />
-            <Pages />
+            <PageRoute />
             <Footer />
-        </section>
+        </Router>
     )
 }
 
