@@ -1,23 +1,27 @@
 import React from 'react'
 import Service from './Service'
 import VRKDevelopers from './VRKDevelopers'
-import About from './About'
+import ManpowerConsultancy from './ManpowerConsultancy'
+// import About from './About'
 import Contract from './Contract'
 import HeroMain from './HeroMain'
 import OtherServices from './OtherServices'
-import WhyChooseUs from './WhyChooseUs'
+import WhyChooseUs from '../../Components/WhyChooseUs'
+import WhatsNew from './WhatsNew'
 // import Team from './Team'
 
 function Pages() {
     return (
         <>
             <HeroMain />
-            <VRKDevelopers />
-            <About />
-            <Contract />
+            {/* <About /> */}
+            <ManpowerConsultancy />
+            {/* <WhatsNew /> */}
             <Service />
+            <Contract />
             <OtherServices />
             <WhyChooseUs />
+            <VRKDevelopers />
             {/* <Team /> */}
         </>
     )

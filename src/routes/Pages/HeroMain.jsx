@@ -14,16 +14,20 @@ function HeroMain() {
             {/* <div className='absolute -left-5 -top-5 h-96 w-96 -z-10 '> */}
             <img src={dots} alt="dots-icon" className='absolute -left-16 -top-20 h-96 w-96 -z-10' />
             {/* </div> */}
-            <section className='max-w-screen-xl mx-auto md:flex py-14 md:py-28 px-3 xl:px-0 lg:h-[85vh]'>
+            <section className='max-w-screen-xl mx-auto md:flex py-14 md:py-24 px-3 xl:px-0 lg:h-[85vh]'>
                 <div className='relative lg:w-1/2 w-3/4 mt-5 grid'>
                     <img src={lines} alt="lines-icon" className='absolute lg:flex hidden -right-80 -bottom-28 size-60 -z-10' />
                     <div>
-                        <h1 className='text-6xl md:text-6xl font-axiforma md:leading-[80px] leading-[70px] font-bold text-[#03045e]   '>
+                        <h1 className='text-6xl md:text-6xl font-axiforma md:leading-[80px] leading-[70px] font-bold text-[#03045e]'>
                             Perfect Place for Your <br /> <span className='text-[#ffc300]'>Business</span> <br />Promotion
                         </h1>
+                        <p className='font-semibold text-gray-600 font-axiforma py-3 leading-7'>
+                            Asian Hope It Company is the fastest growing Manpower solutions, Certified Training' & Career counselling provider in India, with specialized service.
+                            Opening at 09:30
+                        </p>
                     </div>
 
-                    <div className='mt-5 lg:mt-0'>
+                    <div>
                         <SecondaryBtn>
                             <a href="tel: +91 9448627779">Contact Us</a>
                         </SecondaryBtn>

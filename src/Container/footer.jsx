@@ -5,19 +5,21 @@ import ig from "../assets/SocialMedia/instagram.png"
 import x from "../assets/SocialMedia/x.png"
 import ln from "../assets/SocialMedia/linkedin.png"
 const aboutItems = {
-    title: "About",
+    // title: "About",
     items: [
-        { label: "Company", slug: "company" },
+        { label: "About", slug: "about" },
+        // { label: "Company", slug: "company" },
         { label: "Services", slug: "services" },
-        { label: "Our Team", slug: "our-team" },
+        { label: "Other Services", slug: "other-services" },
+        { label: "Team", slug: "team" },
         // { label: "Blog", slug: "blog" }
     ]
 }
 const socialMedia = [
-    { icon: fb, link: "facebook", slug: "facebook" },
+    { icon: fb, link: "https://www.facebook.com/p/Asian-hope-it-company-100069302953203/", slug: "facebook" },
     { icon: ig, link: "instagram", slug: "instagram" },
     { icon: x, link: "x", slug: "x" },
-    { icon: ln, link: "linkedin", slug: "linkedin" }
+    { icon: ln, link: "https://www.linkedin.com/company/asian-hope-it-company/about/", slug: "linkedin" }
 ]
 function Footer() {
     return (
@@ -38,10 +40,10 @@ function Footer() {
                     </div>
                     <div className='grid grid-cols-2 '>
                         <div>
-                            <h3 className='text-white text-lg'>{aboutItems?.title}</h3>
+                            {/* <h3 className='text-white text-lg'>{aboutItems?.title}</h3> */}
                             <ul className='mt-2'>
                                 {aboutItems?.items?.map((item, i) => (
-                                    <li key={i} className='text-white mb-2 font-axiforma'>{item?.label}</li>
+                                    <li key={i} className='text-white mb-2 font-axiforma cursor-pointer' onClick={() => window.open(item?.slug)}>{item?.label}</li>
                                 ))}
                             </ul>
                         </div>

@@ -3,6 +3,9 @@ import img1 from "../../assets/Image/IMG_1088.jpg"
 import img2 from "../../assets/Image/IMG_1104.jpg"
 import img3 from "../../assets/Image/IMG_1092.jpg"
 import { H1 } from '../../Components/Typography'
+import { useNavigate } from 'react-router-dom'
+
+import BackTo from '../../Components/BackTo'
 
 const whyChooseUs = [
     { icon: img1, label: "Statewide Clients", desc: "We are trusted by 40+ clients from statewide." },
@@ -18,15 +21,19 @@ const list = [
 ]
 
 function Hero() {
+    let navigate = useNavigate()
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
     return (
         <>
             <main className='bg-gray-100'>
-                <section className='max-w-screen-xl mx-auto py-20 md:py-32 px-3 xl:px-0'>
-                    <H1 className='text-center text-4xl font-semibold font-axiforma tracking-wide'>VRK Developers</H1>
-                    <p className='font-axiforma text-center pt-5 font-medium'>Contact Number <a href="tel: +919448627779 ">+91 9448627779, </a> <a href="tel: +91 8123551230 ">+91 8123551230</a></p>
+                <section className='max-w-screen-xl mx-auto px-3 xl:px-0'>
+                    <BackTo backTo={() => navigate("/")} title={"VRK Developers"} />
+                    <div className='py-20 md:py-32'>
+                        <H1 className='text-center text-4xl font-semibold font-axiforma tracking-wide'>VRK Developers</H1>
+                        <p className='font-axiforma text-center pt-5 font-medium'>Contact Number <a href="tel: +919448627779 ">+91 9448627779, </a> <a href="tel: +91 8123551230 ">+91 8123551230</a></p>
+                    </div>
                 </section>
             </main >
             <main>

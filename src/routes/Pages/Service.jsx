@@ -1,26 +1,15 @@
 import React from 'react'
-import bpo from "../../assets/service/bpo.jpg"
-import software from "../../assets/service/software-design.jpg"
-import eGovernance from "../../assets/service/e-governance.jpg"
-import dataManage from "../../assets/service/data-management.jpg"
-import trainingResource from "../../assets/service/resource-training.jpg"
-import business from "../../assets/service/business-consulting.jpg"
+
 import { H1 } from '../../Components/Typography'
-const ourService = [
-    { icon: bpo, label: "BPO Services", desc: "For Outstanding Business Inbound and outbound process." },
-    { icon: software, label: "Software Development And Design", desc: "Tailored software development to provide varied specialized IT and ITeS services the e- governance and IT modernization programs in India." },
-    { icon: eGovernance, label: "E-Governance", desc: "To provide software services in the  following areas end-to-end solutions." },
-    { icon: dataManage, label: "Data Management and Services", desc: "For secure, reliable and hassle-free data management service." },
-    { icon: business, label: "Business Consulting Services", desc: "From Inception to Execution including all level tasks across diverse departments." },
-    { icon: trainingResource, label: "Resource Argumentation & Training Resources", desc: "Sourcing and Training of the workforce in Corporate environment" }
-]
+import { ourService } from '../../db/json'
+
 function Service() {
     return (
         <main className='bg-gray-50'>
             <section className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
                 <div className='text-center mb-12'>
                     <H1>All the services that we provide</H1>
-                    <p className='mt-10 text-[17px] font-axiforma text-gray-500 px-3 sm:px-14'>We can meet you anywhere in your journey with a
+                    <p className='mt-14 leading-7 font-axiforma text-gray-500 px-3 sm:px-14'>We can meet you anywhere in your journey with a
                         unique plan that changes and grows with you,
                         from full implementation to strategic advisory and
                         program management.
@@ -52,7 +41,7 @@ function Service() {
                                 key={i}
                                 className="p-4 flex flex-col items-center text-center transition-all shadow-xl rounded-xl hover:scale-105 md:bg-[#F2F1FD]"
                             >
-                                <div className='sm:w-full h-24 sm:h-32 md:h-40 lg:h-48 mb-5'>
+                                <div className='sm:w-full w-full sm:h-40 md:h-48 lg:h-56 mb-5'>
                                     <img
                                         src={item?.icon}
                                         alt={item?.label}
