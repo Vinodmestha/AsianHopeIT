@@ -28,10 +28,13 @@ function Footer() {
                 <div className='grid md:grid-cols-3 grid-cols-1 gap-6 md:gap-10 mb-5'>
                     <div>
                         <div className='flex items-start'>
-                            <div className='w-14 h-14 rounded-full'>
-                                <img src={logo} alt="header-logo" className='w-full h-full rounded-full' />
+                            <div className='size-16 rounded-full'>
+                                <img src={logo} alt="header-logo" className='w-full h-full' />
                             </div>
-                            <h4 className='text-white font-axiforma tracking-wider font-bold ml-3'>AsianHope IT <br /> Company</h4>
+                            <div className='ml-2'>
+                                <h4 className='text-white text-sm font-axiSemiBold tracking-widest'><span className='text-2xl sm:text-3xl'>AsianHope</span> IT Company</h4>
+                                <p className='text-white text-sm font-semibold -mt-[3px]'>Creating Impact Together </p>
+                            </div>
                         </div>
                         <div className='sm:mt-5 text-white mt-3 font-axiforma'>
                             <h4>9448627779</h4>

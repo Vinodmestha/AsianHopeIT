@@ -5,7 +5,7 @@ import { ourService } from '../../db/json'
 
 function Service() {
     return (
-        <main className='bg-gray-50'>
+        <main className='bg-gray-100'>
             <section className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
                 <div className='text-center mb-12'>
                     <H1>All the services that we provide</H1>
@@ -23,23 +23,12 @@ function Service() {
                 </div>
                 {/* <hr className='border-[#ffc300]' /> */}
                 <div className='pt-5'>
-                    <p className='text-teal-800 font-axiforma mt-4 mb-10 text-center bg-white p-8 rounded-xl shadow-lg'>
-                        Our focused offerings to support
-                        you through each stage of your
-                        journey - from pilot to
-                        production. From out of the box
-                        offerings to customized
-                        packages, SmartServices are
-                        designed for you to realize the
-                        value of your investment
-                        quickly, painlessly, at a lower
-                        cost and with peak performance.
-                    </p>
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
                         {ourService?.map((item, i) => (
                             <div
                                 key={i}
-                                className="p-4 flex flex-col items-center text-center transition-all shadow-xl rounded-xl hover:scale-105 md:bg-[#F2F1FD]"
+                                className="p-4 flex flex-col items-center text-center transition-all shadow-xl rounded-xl border-2 hover:scale-105 md:bg-white"
                             >
                                 <div className='sm:w-full w-full sm:h-40 md:h-48 lg:h-56 mb-5'>
                                     <img
@@ -53,6 +42,18 @@ function Service() {
                             </div>
                         ))}
                     </div>
+                    <p className='text-gray-600 font-semibold font-axiforma text-center bg-green-200 p-8 rounded-xl shadow-lg mt-5 sm:mt-10'>
+                        Our focused offerings to support
+                        you through each stage of your
+                        journey - from pilot to
+                        production. From out of the box
+                        offerings to customized
+                        packages, SmartServices are
+                        designed for you to realize the
+                        value of your investment
+                        quickly, painlessly, at a lower
+                        cost and with peak performance.
+                    </p>
                 </div>
             </section>
         </main>

@@ -12,7 +12,7 @@ export default function ManpowerConsultancy() {
         <main className='bg-gray-5'>
             <section className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
                 <div className='text-center mb-12'>
-                    <H1>Manpower Consultancy</H1>
+                    <H1>Manpower Placement Consultancy</H1>
                     <div className='flex mt-8 sm:mt-10'>
                         <Desc className=''>
                             In India’s very own Silicon Valley, hiring the right personnel demands a focused approach and a strong network. With over 10 years of manpower consultancy experience and a strong network of candidates, Manpower Consultancy assists you in finding the best fit for your organization. Join hands with us and end your recruitment woes with the best manpower agency in Bangalore.
@@ -20,11 +20,11 @@ export default function ManpowerConsultancy() {
                     </div>
                 </div>
 
-                <div className='grid sm:grid-cols-2 gap-10'>
+                <div className='grid sm:grid-cols-2 gap-6 md:gap-8 lg:gap-10'>
                     {data?.map((item, i) => (
                         <div key={i} className='bg-gray-50 shadow-sm rounded-lg px-5 py-10 border'>
                             <H3>{item?.title}</H3>
-                            <p className='mt-5 font-axiforma text-gray-700 sm:px-3 leading-8'>{item?.desc}</p>
+                            <p className='mt-5 font-axiforma text-gray-700 md:px-3 leading-8'>{item?.desc}</p>
                         </div>
                     ))}
                 </div>
