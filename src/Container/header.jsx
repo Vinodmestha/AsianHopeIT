@@ -63,7 +63,7 @@ function Header() {
                                 <li key={i} onClick={() => {
                                     setOpen(true),
                                         navigate(item?.slug)
-                                }} className='font-axiMedium text-base lg:text-lg md:text-white text-[#001f54] hover:text-gray-400 cursor-pointer py-2 md:py-0'>{item?.label}2</li>
+                                }} className='font-axiMedium text-base lg:text-lg md:text-white text-[#001f54] hover:text-gray-400 cursor-pointer py-2 md:py-0'>{item?.label}</li>
                             ))}
                         </ul>
                     </div>

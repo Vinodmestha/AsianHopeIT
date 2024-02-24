@@ -38,3 +38,8 @@ a{
     font-family: axiformaBold;
     src: url("../src/assets/Fonts/Axiforma/Axiforma-Bold.ttf") format("opentype");
 }
+
+.text-hover {
+    -webkit-text-stroke: 1px #EA358C;
+    -webkit-text-fill-color: white;
+}

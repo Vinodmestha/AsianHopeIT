@@ -7,7 +7,8 @@ import Contract from './Contract'
 import HeroMain from './HeroMain'
 import OtherServices from './OtherServices'
 import WhyChooseUs from '../../Components/WhyChooseUs'
-import WhatsNew from './WhatsNew'
+// import WhatsNew from './WhatsNew'
+import Takshila from './Takshila'
 // import Team from './Team'
 
 function Pages() {
@@ -20,8 +21,9 @@ function Pages() {
             <Service />
             <Contract />
             <OtherServices />
-            <WhyChooseUs />
+            <Takshila />
             <VRKDevelopers />
+            <WhyChooseUs />
             {/* <Team /> */}
         </>
     )

@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { H1 } from '../../Components/Typography'
-import { otherServices } from '../../db/json'
+import { otherServices, services } from '../../db/json'
 
 
 function OtherServices() {
+    const [state, setState] = useState({
+        active: "it",
+        activeItem: services[0]
+    })
     return (
         <main className='bg-gray-100'>
             <section className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
@@ -42,6 +46,40 @@ function OtherServices() {
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className='pt-20'>
+                    <div className='flex gap-3 lg:w-1/2 sm:w-4/5 mx-auto'>
+                        {services?.map((item, i) => (
+                            <button key={i}
+                                className={`w-full px-5 py-2.5 text-lg rounded-lg font-axiforma border ${state.active === item?.slug ? "bg-blue-500 text-white" : ""}`}
+                                onClick={() => {
+                                    setState((prev) => {
+                                        return {
+                                            ...prev,
+                                            active: item?.slug,
+                                            activeItem: item
+                                        }
+                                    })
+                                }}>{item?.label}</button>
+                        ))}
+                    </div>
+                    <div className='py-14 font-axiforma text-center'>
+                        <h1 className='text-3xl pb-4 font-bold text-[#001f54]'>{state?.activeItem?.label}</h1>
+                        <p>{state.activeItem?.desc}</p>
+                    </div>
+                    <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-5'>
+                        {state.activeItem?.data?.map((item, i) => (
+                            <div key={i} className='bg-white rounded-lg font-axiforma'>
+                                <div>
+                                    <img src={item?.img} alt={item?.heading} className='rounded-t-lg' />
+                                </div>
+                                <div className='px-4 py-5'>
+                                    <h5 className='text-xl pb-3 font-semibold pt-3 text-[#001f54]'>{item?.heading}</h5>
+                                    <p className='text-gray-500'>{item?.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
             </section>
