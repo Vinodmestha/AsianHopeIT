@@ -3,11 +3,11 @@ import takshila from "../../assets/Image/takshila.png"
 import { H1 } from '../../Components/Typography'
 
 const tdvsData = [
-    { desc: "Easy to maintain the answer booklets securely" },
+    { desc: "Easy to maintain the answer booklets securely." },
     { desc: "Easy to access all the answer booklets whenever required by the authorized users." },
-    { desc: "Valuation process will be simplified" },
+    { desc: "Valuation process will be simplified." },
     { desc: "Error during the tabulation will be minimized to almost zero." },
-    { desc: "Manual valuation billing and payment will be eliminated and system will generate the  bills based on the rules and regulations given by the university" },
+    { desc: "Manual valuation billing and payment will be eliminated and system will generate the  bills based on the rules and regulations given by the university." },
     { desc: "Logistics problems such as issuing the answer books to evaluators, receive back after evaluation, storing answer booklets, pulling required answer books for Re- valuation / Re-totalling / Challenge Valuation / Photocopy will be reduced." },
     { desc: "Analysis of the valuation process. Hundreds of reports/ analysis graphs can be generated during and after evaluation." },
 ]
@@ -35,11 +35,11 @@ export default function Takshila() {
                                     <br />
                                     With Takshila Digital Evaluation System,
                                     institutions are able to digitize the
-                                    evaluation process and improvethe
+                                    evaluation process and improve the
                                     quality and speed of tabulation
-                                    processand hence processing the
-                                    students results at the earliest withhigh
-                                    rate of accuracy in short periodof time.
+                                    process and hence processing the
+                                    students results at the earliest with high
+                                    rate of accuracy in short period of time.
                                 </p>
                                 <p className='text-hover text-3xl pt-10'>
                                     DIGITIZE,  DEVICE & DELIVER
@@ -48,7 +48,8 @@ export default function Takshila() {
                             <div>
                                 <img src={takshila} alt="takshila" />
                             </div>
-                        </div></div>
+                        </div>
+                    </div>
                     <div className='md:py-20 py-10'>
                         <H1 className="md:pb-10">ADVANTAGES OF TDVS</H1>
                         <div className="grid grid-cols-1 md:gap-10 gap-6 md:grid-cols-2 pt-10">

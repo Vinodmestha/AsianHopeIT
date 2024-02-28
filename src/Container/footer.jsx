@@ -11,7 +11,7 @@ const aboutItems = {
         // { label: "Company", slug: "company" },
         { label: "Services", slug: "services" },
         { label: "Other Services", slug: "other-services" },
-        { label: "Team", slug: "team" },
+        // { label: "Team", slug: "team" },
         // { label: "Blog", slug: "blog" }
     ]
 }
@@ -25,9 +25,9 @@ function Footer() {
     return (
         <footer className='bg-[#001f54] py-12'>
             <div className='max-w-screen-xl mx-auto px-5 xl:px-0'>
-                <div className='grid md:grid-cols-3 grid-cols-1 gap-6 md:gap-10 mb-5'>
+                <div className='grid lg:grid-cols-3 grid-cols-1 gap-6 md:gap-10 mb-5'>
                     <div>
-                        <div className='flex items-start'>
+                        <div className='flex items-center'>
                             <div className='size-16 rounded-full'>
                                 <img src={logo} alt="header-logo" className='w-full h-full' />
                             </div>
@@ -38,33 +38,40 @@ function Footer() {
                         </div>
                         <div className='sm:mt-5 text-white mt-3 font-axiforma'>
                             <h4>9448627779</h4>
-                            <h4>asianhopeit@gmail.com</h4>
+                            <h4>connect@asianhopeit.com</h4>
                         </div>
                     </div>
-                    <div className='grid grid-cols-2 '>
-                        <div>
-                            {/* <h3 className='text-white text-lg'>{aboutItems?.title}</h3> */}
-                            <ul className='mt-2'>
-                                {aboutItems?.items?.map((item, i) => (
-                                    <li key={i} className='text-white mb-2 font-axiforma cursor-pointer' onClick={() => window.open(item?.slug)}>{item?.label}</li>
-                                ))}
-                            </ul>
+                    <div className='sm:col-span-2'>
+                        <div className='flex sm:flex-nowrap flex-wrap gap-5'>
+                            <div className='w-full sm:w-1/2'>
+                                {/* <h3 className='text-white text-lg'>{aboutItems?.title}</h3> */}
+                                <ul className='mt-2'>
+                                    {aboutItems?.items?.map((item, i) => (
+                                        <li key={i} className='text-gray-50 mb-2 font-axiforma cursor-pointer' onClick={() => window.open(item?.slug)}>{item?.label}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className='w-full font-axiforma'>
+                                <h3 className='text-gray-300 text-lg'>Address</h3>
+                                <ul className='mt-2'>
+                                    <li className='text-gray-50 mb-2 cursor-pointer'>
+                                        <a href="https://maps.google.com/?q=13.002210,77.540825" target='_blank'>
+                                            #1466, Aishwarya complex, 1st Floor, 14th Main,
+                                            Shankarmutt Main Road, Mahalakshmipuram, Bangalore-560086.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='font-axiforma sm:w-1/2'>
+                                <h3 className='text-gray-300 text-lg'>Contact</h3>
+                                <h3 className='text-gray-50'>
+                                    Phone : 9448627779
+                                </h3>
+                                <h3 className='text-gray-50'>
+                                    Email: connect@asianhopeit.com
+                                </h3>
+                            </div>
                         </div>
-                        <div className='font-axiforma'>
-                            <h3 className='text-white text-lg'>Address</h3>
-                            <ul className='mt-2'>
-                                <li className='text-white mb-2'>Basaveshwaranagara, Bengaluru</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className='font-axiforma'>
-                        <h3 className='text-white text-lg'>Contact</h3>
-                        <h3 className='text-white'>
-                            Phone : 9448627779
-                        </h3>
-                        <h3 className='text-white'>
-                            Email: connect@asianhopeit.com
-                        </h3>
                     </div>
                 </div>
                 <hr />

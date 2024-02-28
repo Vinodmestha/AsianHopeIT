@@ -22,8 +22,8 @@ function HeroMain() {
                             Perfect Place for Your <br /> <span className='text-[#ffc300] font-extrabold'>Business</span> <br />Promotion
                         </h1>
                         <p className='font-semibold text-gray-600 font-axiforma py-3 leading-7'>
-                            Asian Hope It Company is the fastest growing Manpower solutions, Certified Training' & Career counselling provider in India, with specialized service.
-                            Opening at 09:30
+                            Asian Hope IT Company is the fastest growing Manpower solutions, Certified Training' & Career counselling provider in India, with specialized services
+                            opening at 09:30
                         </p>
                     </div>
 

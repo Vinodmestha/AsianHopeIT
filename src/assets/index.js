@@ -17,4 +17,5 @@ import bos from "../assets/service/bos.jpg"
 import bpo2 from "../assets/service/bpo2.jpg"
 import bcs from "../assets/service/bcs.jpg"
 
-export {wds,wms,whs,wad,dms,api,ehs,bos,gds,lds,b2b,b2c, wsc,bpo2,bcs};
+import ribbon from "../assets/Image/ribbon.png"
+export {wds,wms,whs,wad,dms,api,ehs,bos,gds,lds,b2b,b2c, wsc,bpo2,bcs,ribbon};

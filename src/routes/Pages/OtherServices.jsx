@@ -17,11 +17,11 @@ function OtherServices() {
                     <p className='font-axiforma text-gray-700 px-3 sm:px-14 mt-10'>
                         AsianHope IT C is also prime in the industry in implementing Solar and IT related projects
                         with respect to public and private sector.<br /> Our premium service in installing and
-                        maintenance of IT and Solar equipment has been lauded by the sector.
+                        maintenance of IT and Solar equipments has been lauded by the sector.
                         <br />
                         <br />
-                        With the experienced and seasoned professionals delivering the service, AsianHope IT C has
-                        been able to cater to the requirements across organisations and domains
+                        With the experienced and seasoned professionals delivering the services, AsianHope IT C has
+                        been able to cater to the requirements across organisations and domains.
                     </p>
                 </div>
 
@@ -39,7 +39,7 @@ function OtherServices() {
                                 />
                             </div>
                             <h4 className="mb-3 text-xl font-bold font-axiBold text-[#03045e]">{item?.label}</h4>
-                            <p className="text-gray-500 font-axiMedium">{item?.desc}</p>
+                            <p className="text-gray-500 font-axiMedium text-justify">{item?.desc}</p>
                             <div className='flex items-center mt-4'>
                                 <h3 className='text-5xl my-3 font-bold font-axiBold text-[#03045e]'>{item?.value}</h3>
                                 <p className='pl-5 text-left font-axiforma text-gray-400'>{item?.desc2}</p>

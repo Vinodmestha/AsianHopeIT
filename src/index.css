@@ -43,3 +43,7 @@ a{
     -webkit-text-stroke: 1px #EA358C;
     -webkit-text-fill-color: white;
 }
+.text-hover2 {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: #ffc300;
+}

@@ -8,7 +8,7 @@ const navItems = [
     { label: "About", slug: "about" },
     { label: "Services", slug: "services" },
     { label: "Other Services", slug: "other-services" },
-    { label: "Team", slug: "team" },
+    // { label: "Team", slug: "team" },
     // { label: "Why Choose Us", slug: "why-choose" }
 ]
 function Header() {

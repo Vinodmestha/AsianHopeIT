@@ -7,10 +7,22 @@
     <title>AsianHope IT Company</title>
     <meta
         name="description"
-        content="Asian Hope is the fastest growing Manpower solutions, Certified Training' & Career counselling provider in India, with specialized service."
+        content="Asian Hope IT Company is the fastest growing Manpower solutions, Certified Training' & Career counselling provider in India, with specialized services opening at 09:30."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script>
+        // It's best to inline this in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes
+        if (
+          localStorage.getItem('color-theme') === 'dark' ||
+          (!('color-theme' in localStorage) &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      </script>
     </head>
     <body>
         <div id="root"></div>

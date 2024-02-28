@@ -64,7 +64,7 @@ export const services = [
 ]
 
 export const otherServices = [
-    { icon: solar1, images: [solar1, solar2, solar3, solar4], label: "SOLAR PRODUCTS ", desc: "AsianHope IT C in its quest to contribute in harnessing the green energy has a wide spectrum of solar-energy based equipment  from panels, lights, chargers, fan, lamp, street light and many more.", value: "80%", desc2: "of the cost of Solar Panels has been dropped since 2018." },
-    { icon: software, images: [it7, it8, it9, it1, it3, it4, it5, it6], label: "IT PRODUCTS", desc: "AsianHope IT C leads the way in supplying IT equipment to government agencies across the state. Biometrics, Printers, Desktops, Laptops  etc., have been the major share holders in the foothold of AsianHope IT C in government sector", value: "95.4%", desc2: "of Indian Institutions using digital examinations as per Speedlabs.in " },
+    { icon: solar1, images: [solar1, solar2, solar3, solar4], label: "SOLAR PRODUCTS ", desc: "AsianHope IT C in its quest to contribute in harnessing the green energy has a wide spectrum of solar-energy based equipment from panels, lights, chargers, fan, lamp, street light and many more.", value: "80%", desc2: "of the cost of Solar Panels has been dropped since 2018." },
+    { icon: software, images: [it7, it8, it9, it1, it3, it4, it5, it6], label: "IT PRODUCTS", desc: "AsianHope IT C leads the way in supplying IT equipments to government agencies across the state. Biometrics, Printers, Desktops, Laptops  etc., have been the major share holders in the foothold of AsianHope IT C in government sector.", value: "95.4%", desc2: "of Indian Institutions using digital examinations as per Speedlabs.in " },
 
 ]

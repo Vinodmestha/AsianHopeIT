@@ -28,7 +28,7 @@ export default function ManpowerConsultancy() {
                         </div>
                     ))}
                 </div>
-
+                <p className='border-2 border-[#ffc300] !bg-[#142c5a] text-[#ffc300] rounded-[30px] px-10 py-3 w-fit font-bold tracking-widest font-axiforma mx-auto mt-10 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10'>Creating Impact Together</p>
             </section>
         </main>
     )
