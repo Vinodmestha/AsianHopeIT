@@ -16,13 +16,13 @@ const whyChooseUs = [
 export default function VRKDevelopers() {
     const navigate = useNavigate()
     return (
-        <main className='bg-gray-50'>
+        <main className='bg-gray-50 dark:bg-darkPrimary'>
             <section className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
                 <div className='text-center mb-12'>
                     <H1 className="tracking-wide">VRK Developers</H1>
                     <ul className="mt-10 grid grid-cols-1 gap-6 text-center text-slate-700 lg:grid-cols-3 sm:grid-cols-2">
                         {whyChooseUs?.map((item, i) => (
-                            <li className="rounded-xl bg-white px-4 py-4 shadow-sm" key={i}>
+                            <li className="rounded-xl bg-white dark:bg-gray-700 dark:bg-clip-padding dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-1 shadow-sm" key={i}>
                                 {/* <div> */}
                                 <img src={item?.icon} alt={item?.label} className="mx-auto h-full w-full p-2 rounded-2xl" />
                                 {/* </div> */}

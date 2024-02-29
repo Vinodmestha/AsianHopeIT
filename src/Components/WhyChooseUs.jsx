@@ -15,7 +15,7 @@ const whyChooseUs = [
 ]
 function WhyChooseUs() {
     return (
-        <main className='bg-gray-100'>
+        <main className='bg-gray-100 dark:bg-darkPrimary'>
             <section className='max-w-screen-xl mx-auto py-8 md:py-14 px-3 xl:px-0'>
                 <H1>Why Choose Us</H1>
                 <ul className="mt-10 grid grid-cols-1 gap-6 text-center text-slate-700 md:grid-cols-2 xl:grid-cols-4">

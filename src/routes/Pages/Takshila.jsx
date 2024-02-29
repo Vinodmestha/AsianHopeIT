@@ -1,6 +1,8 @@
 import React from 'react'
 import takshila from "../../assets/Image/takshila.png"
+
 import { H1 } from '../../Components/Typography'
+import Container from '../../Components/Container'
 
 const tdvsData = [
     { desc: "Easy to maintain the answer booklets securely." },
@@ -14,14 +16,14 @@ const tdvsData = [
 export default function Takshila() {
     return (
         <section>
-            <div className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
+            <Container>
                 <div className='text-center'>
-                    <div className='pt-5 pb-10'>
+                    <div className='md:pt-20 pt-10 pb-5'>
                         <H1>TAKSHILA</H1>
-                        <h5 className='text-xl font-axiforma pt-3'>DIGITAL VALUATION SYSTEM</h5>
+                        <h5 className='text-xl font-axiforma tracking-widest pt-3 dark:text-secondary'>DIGITAL VALUATION SYSTEM</h5>
                         <div className='grid md:grid-cols-2 grid-cols-1 gap-5 pt-16'>
                             <div>
-                                <p className='text-justify leading-7 font-axiforma text-gray-500 px-3 sm:px-14'>We can meet you anywhere in your journey with a
+                                <p className='text-justify leading-7 font-axiforma text-gray-500 dark:text-gray-400 px-3 sm:px-14'>We can meet you anywhere in your journey with a
                                     Growing activities of examinations and
                                     the management of huge volume of
                                     answer books during and after the
@@ -70,7 +72,7 @@ export default function Takshila() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section >
     )
 }

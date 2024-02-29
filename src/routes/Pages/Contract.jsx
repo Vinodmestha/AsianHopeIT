@@ -15,7 +15,7 @@ const contract = [
 ]
 function Contract() {
     return (
-        <main className='bg-[#001f54]'>
+        <main className='bg-primary dark:bg-[#010336]'>
             <section className='max-w-screen-xl mx-auto py-6 md:py-12 px-3 xl:px-0'>
                 <p className='text-white text-lg text-center font-axiMedium'>Asianhope IT C is actively participating in the Central and State Government contracts  </p>
                 <div className='overflow-x-scroll whitespace-nowrap w-full'>

@@ -5,11 +5,11 @@ import { ourService } from '../../db/json'
 
 function Service() {
     return (
-        <main className='bg-gray-100'>
+        <main className='bg-gray-100 dark:bg-darkPrimary'>
             <section className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
                 <div className='text-center mb-12'>
                     <H1>All the services that we provide</H1>
-                    <p className='mt-14 leading-7 font-axiforma text-gray-500 px-3 sm:px-14'>We can meet you anywhere in your journey with a
+                    <p className='mt-14 leading-7 font-axiforma text-gray-500 dark:text-gray-400 px-3 sm:px-14'>We can meet you anywhere in your journey with a
                         unique plan that changes and grows with you,
                         from full implementation to strategic advisory and
                         program management.

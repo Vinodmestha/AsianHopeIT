@@ -9,11 +9,11 @@ const data = [
 ]
 export default function ManpowerConsultancy() {
     return (
-        <main className='bg-gray-5'>
-            <section className='max-w-screen-xl mx-auto py-10 md:py-20 px-3 xl:px-0'>
+        <main className='bg-gray-5 dark:bg-darkPrimary'>
+            <section className='max-w-screen-xl mx-auto py-10 md:py-24 px-3 xl:px-0'>
                 <div className='text-center mb-12'>
                     <H1>Manpower Placement Consultancy</H1>
-                    <div className='flex mt-8 sm:mt-10'>
+                    <div className='flex mt-8 sm:mt-12'>
                         <Desc className=''>
                             In India’s very own Silicon Valley, hiring the right personnel demands a focused approach and a strong network. With over 10 years of manpower consultancy experience and a strong network of candidates, Manpower Consultancy assists you in finding the best fit for your organization. Join hands with us and end your recruitment woes with the best manpower agency in Bangalore.
                         </Desc>
@@ -22,13 +22,13 @@ export default function ManpowerConsultancy() {
 
                 <div className='grid sm:grid-cols-2 gap-6 md:gap-8 lg:gap-10'>
                     {data?.map((item, i) => (
-                        <div key={i} className='bg-gray-50 shadow-sm rounded-lg px-5 py-10 border'>
+                        <div key={i} className='bg-gray-50 dark:bg-gray-800 dark:backdrop-blur-lg shadow-sm rounded-lg px-5 py-10 border'>
                             <H3>{item?.title}</H3>
-                            <p className='mt-5 font-axiforma text-gray-700 md:px-3 leading-8'>{item?.desc}</p>
+                            <p className='mt-5 font-axiforma text-gray-700 dark:text-gray-400 md:px-3 leading-8'>{item?.desc}</p>
                         </div>
                     ))}
                 </div>
-                <p className='border-2 border-[#ffc300] !bg-[#142c5a] text-[#ffc300] rounded-[30px] px-10 py-3 w-fit font-bold tracking-widest font-axiforma mx-auto mt-10 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10'>Creating Impact Together</p>
+                <p className='border-2 border-secondary !bg-primary text-secondary rounded-[30px] px-10 py-3 w-fit font-bold tracking-widest font-axiforma mx-auto mt-10 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10'>Creating Impact Together</p>
             </section>
         </main>
     )

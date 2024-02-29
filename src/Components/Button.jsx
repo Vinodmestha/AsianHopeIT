@@ -1,6 +1,6 @@
 export const PrimaryBtn = ({ className, onClick, children }) => {
     return (
-        <button className={`border-2 border-blue-500 text-blue-500 py-2.5 px-5 font-axiMedium font-semibold rounded-full hover:text-white hover:bg-blue-500 ${className}`} onClick={onClick} >{children}</button >
+        <button className={`border-2 border-blue-500 dark:border-secondary text-blue-500 dark:text-secondary py-2.5 px-5 font-axiMedium font-semibold rounded-full hover:text-white hover:bg-blue-500 ${className}`} onClick={onClick} >{children}</button >
     )
 }
 export const SecondaryBtn = ({ className, onClick, children }) => {

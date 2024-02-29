@@ -20,7 +20,7 @@ function AboutSection() {
         window.scrollTo(0, 0)
     }, [])
     return (
-        <main className='bg-gray-100'>
+        <main className='bg-gray-100 dark:bg-darkPrimary'>
             <section className='max-w-screen-xl mx-auto px-3 xl:px-0'>
                 <BackTo backTo={() => navigate("/")} title={"About Us"} />
                 <div className='py-12 md:py-24 '>
@@ -32,7 +32,7 @@ function AboutSection() {
                                     <img src={item?.image} alt="about" className='w-full md:w-3/4 h-full rounded-xl' />
                                 </div>
                                 <div className='md:w-1/2 flex items-center mt-5 md:mt-0'>
-                                    <p className='text-left font-axiforma text-gray-600 leading-7 sm:leading-8 md:leading-9'>{item?.desc}</p>
+                                    <p className='text-left font-axiforma text-gray-600 dark:text-gray-400 leading-7 sm:leading-8 md:leading-9'>{item?.desc}</p>
                                 </div>
                             </div>
                         ))}

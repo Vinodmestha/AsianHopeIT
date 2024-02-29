@@ -23,7 +23,7 @@ const socialMedia = [
 ]
 function Footer() {
     return (
-        <footer className='bg-[#001f54] py-12'>
+        <footer className='bg-primary dark:bg-darkPrimary dark:border-t-2 dark:border-t-gray-500 py-12'>
             <div className='max-w-screen-xl mx-auto px-5 xl:px-0'>
                 <div className='grid lg:grid-cols-3 grid-cols-1 gap-6 md:gap-10 mb-5'>
                     <div>
@@ -74,7 +74,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <hr />
+                <hr className='dark:border-t-gray-500' />
                 <div className='sm:flex justify-between items-center mt-5 font-axiforma'>
                     <h4 className='text-white'>
                         &copy;Business Consultant. All Right Reserved 2024

@@ -11,12 +11,12 @@ export default function Hero() {
     return (
         <div>
 
-            <main className='bg-gray-100'>
+            <main className='bg-gray-100 dark:bg-darkPrimary'>
                 <Container>
                     <BackTo backTo={() => navigate("/")} title={"Services"} />
                     <div className='py-20 md:py-32'>
                         <H1 className='text-center text-4xl font-semibold font-axiforma tracking-wide'>Our services and unique products.</H1>
-                        <p className='font-axiforma text-center pt-5 font-medium'>Here you can find out quickly and concisely which services Asian IT Company offers you.</p>
+                        <p className='font-axiforma text-center pt-5 font-medium dark:text-gray-400'>Here you can find out quickly and concisely which services Asian IT Company offers you.</p>
                     </div>
                 </Container>
             </main >
@@ -25,7 +25,7 @@ export default function Hero() {
                     {ourService?.map((item, i) => (
                         <div
                             key={i}
-                            className="p-4 grid sm:grid-cols-2 grid-cols-1  items-start text-center transition-all shadow-xl rounded-xl md:bg-[# ]"
+                            className="p-4 grid sm:grid-cols-2 grid-cols-1 items-start text-center transition-all shadow-xl rounded-xl dark:bg-gray-800"
                         >
                             <div className='sm:w-full w-full sm:h-40 md:h-48 lg:h-64 mb-5'>
                                 <img
@@ -35,8 +35,8 @@ export default function Hero() {
                                 />
                             </div>
                             <div className='sm:mt-10 mt-5 sm:px-5'>
-                                <h4 className="mb-3 text-xl font-axiforma font-bold">{item?.label}</h4>
-                                <p className="text-gray-500 font-axiforma">{item?.desc}</p>
+                                <h4 className="mb-3 text-xl font-axiforma font-bold dark:text-white">{item?.label}</h4>
+                                <p className="text-gray-500 dark:text-gray-400 font-axiforma">{item?.desc}</p>
                             </div>
                         </div>
                     ))}
