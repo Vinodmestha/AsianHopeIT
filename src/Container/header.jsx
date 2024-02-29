@@ -76,8 +76,8 @@ function Header() {
                     >
                         <img src={menu} alt='menu-con' className='size-6' />
                     </button>
-                    <div className={`block lg:hidden absolute right-0 top-full w-full rounded-b-lg z-50 md:bg-transparent bg-white dark:bg-gray-800 md:static md:flex md:w-full md:max-w-full px-5 md:px-0 py-3 lg:py-0 ${open ? "hidden" : ""} `}>
-                        <button className='md:hidden absolute right-5 size-6 font-semibold dark:text-white'
+                    <div className={`block lg:hidden absolute right-0 top-full w-full rounded-b-lg z-50 md:bg-transparent bg-primary dark:bg-gray-800 md:static md:flex md:w-full md:max-w-full px-5 md:px-0 py-3 lg:py-0 ${open ? "hidden" : ""} `}>
+                        <button className='md:hidden absolute right-5 size-6 font-semibold text-white'
                             onClick={() => {
                                 setOpen(true)
                             }}
@@ -89,12 +89,10 @@ function Header() {
                                 <li key={i} onClick={() => {
                                     setOpen(true),
                                         navigate(item?.slug)
-                                }} className='font-axiMedium text-base lg:text-lg md:text-white text-[#001f54] dark:text-white hover:text-gray-400 cursor-pointer py-2 md:py-0'>{item?.label}</li>
+                                }} className='font-axiMedium text-base lg:text-lg text-white dark:text-white hover:text-gray-400 cursor-pointer py-2 md:py-0'>{item?.label}</li>
                             ))}
-                            <div className="flex" onClick={handleClick}>
-                                <div className="flex-initial w-fit font-bold underline decoration-sky-500 text-red-800 dark:bg-black dark:text-white">
-                                    (Dark/Light)
-                                </div>
+                            <div className="size-9 cursor-pointer bg-white rounded-full p-2" onClick={handleClick}>
+                                <Switcher theme={theme} />
                             </div>
                         </ul>
                     </div>
